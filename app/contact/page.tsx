@@ -32,7 +32,7 @@ export default function ContactPage() {
         <Section
           id="contact"
           title="Contact"
-          subtitle="The fastest way to reach me is email. I'm happy to share additional project details or code samples."
+          subtitle="The fastest way to reach me is email. I&apos;m happy to share additional project details or code samples."
         >
           <Card>
             <div className="flex flex-wrap gap-3">

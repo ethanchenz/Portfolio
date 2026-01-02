@@ -50,7 +50,7 @@ export default function Page() {
         {/* Description */}
         <div className="flex justify-center pb-12">
           <p className="max-w-3xl text-center text-base leading-relaxed text-zinc-700 sm:text-lg">
-            Computer Engineering student (B.S., expected May 2028) focused on embedded systems, digital design, and practical software engineering. Hands-on experience shipping features in a production iOS app, building and maintaining a research web dashboard + wiki, and prototyping sensor/test setups with Arduino/Raspberry Pi. Undergraduate Research Assistant at Virginia Tech's LEWAS Lab, contributing to environmental research through software development and sensor integration.
+            Computer Engineering student (B.S., expected May 2028) focused on embedded systems, digital design, and practical software engineering. Hands-on experience shipping features in a production iOS app, building and maintaining a research web dashboard + wiki, and prototyping sensor/test setups with Arduino/Raspberry Pi. Undergraduate Research Assistant at Virginia Tech&apos;s LEWAS Lab, contributing to environmental research through software development and sensor integration.
           </p>
         </div>
 
