@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${site.domain}`),
-  title: `${site.name} — Portfolio`,
+  title: `${site.portfolioTitle} — ${site.name}`,
   description: site.tagline,
   alternates: { canonical: "/" },
   openGraph: {

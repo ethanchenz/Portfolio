@@ -11,10 +11,24 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/ethan-chen-988a691b8/",
     github: "https://github.com/ethanchenz",
   },
+  portfolioTitle: "Electrical Engineering Portfolio",
+  resumePath: "/Resume-Ethan-Chen.pdf",
   tagline:
-    "Computer Engineering student at Virginia Tech • Undergraduate Research Assistant (LEWAS Lab) • Embedded + Full‑Stack",
+    "Electrical Engineering student at Virginia Tech • Undergraduate Research Assistant (LEWAS Lab) • Embedded + Full‑Stack",
+  summary:
+    "Thanks for checking out my portfolio! Whether you're a recruiter, fellow engineer, friend, or curious visitor, I hope you enjoy the ride.",
+  strengths: [
+    "Hands-on with embedded systems and prototyping.",
+    "Comfortable building software that connects to real hardware.",
+    "Like to design, test, and iterate until things work.",
+  ],
+  weaknesses: [
+    "Will happily over-engineer a side project.",
+    "Too many tabs open at once.",
+    "Really like to take things apart to see how they work.",
+  ],
   about: [
-    "Computer Engineering student (B.S., expected May 2028) focused on embedded systems, digital design, and practical software engineering.",
+    "Electrical Engineering student (B.S., expected May 2028) focused on embedded systems, digital design, and practical software engineering.",
     "Hands-on experience shipping features in a production iOS app, building and maintaining a research web dashboard + wiki, and prototyping sensor/test setups with Arduino/Raspberry Pi.",
   ],
 };
@@ -22,7 +36,7 @@ export const site = {
 export const education = [
   {
     school: "Virginia Polytechnic Institute of Technology (Virginia Tech)",
-    degree: "B.S. Computer Engineering",
+    degree: "B.S. Electrical Engineering",
     location: "Blacksburg, VA",
     graduation: "Expected May 2028",
     gpa: "3.2",
@@ -32,8 +46,9 @@ export const education = [
 
 export const experience = [
   {
-    role: "Undergraduate Research Assistant — Electrical and Computer Engineer (LEWAS Lab)",
-    org: "Department of Engineering Education, Virginia Tech",
+    slug: "lewas",
+    role: "Undergraduate Research Assistant — Electrical Engineer (LEWAS Lab)",
+    org: "Virginia Tech — LEWAS Lab",
     location: "Blacksburg, VA",
     dates: "Fall 2025 – Present",
     bullets: [
@@ -44,6 +59,7 @@ export const experience = [
     ],
   },
   {
+    slug: "baja",
     role: "Testing Team Member",
     org: "Virginia Tech Baja SAE — Design Team",
     location: "Blacksburg, VA",
@@ -55,6 +71,7 @@ export const experience = [
     ],
   },
   {
+    slug: "bawshuman",
     role: "iOS / Software Intern",
     org: "BawsHuman",
     location: "Remote", // Update this with actual location from your resume
@@ -68,7 +85,9 @@ export const experience = [
 
 export const projects = [
   {
+    slug: "cpu-design",
     title: "Simple Computer (CPU) Design",
+    category: "Coursework",
     dates: "Fall 2025",
     highlights: [
       "Built an assembly program on a custom 16-bit Simple Computer ISA to evaluate transportation options (Car/Plane/Train/Bus) using pointer-based memory reads and sequential traversal.",
@@ -80,7 +99,9 @@ export const projects = [
     link: "",
   },
   {
+    slug: "led-controller",
     title: "LED Controller",
+    category: "Embedded",
     dates: "Spring 2025",
     highlights: [
       "Designed and built an Arduino-based LED controller circuit using a potentiometer to alternate LED colors.",

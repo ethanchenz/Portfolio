@@ -1,37 +1,23 @@
 import { Container } from "@/components/Container";
-import { Navbar } from "@/components/Navbar";
+import { ExperienceCard } from "@/components/ExperienceCard";
+import { PageShell } from "@/components/PageShell";
 import { experience } from "@/lib/siteData";
 
 export default function ExperiencePage() {
   return (
-    <main className="min-h-screen bg-white">
-      <Navbar />
-
+    <PageShell>
       <Container>
-        {/* Title */}
-        <div className="flex justify-center pt-16 pb-12">
-          <h1 className="text-5xl font-bold text-black">Experience</h1>
-        </div>
-
-        {/* Experience Cards */}
-        <div className="mx-auto max-w-3xl space-y-4 pb-16">
-          {experience.map((exp) => (
-            <div
-              key={`${exp.org}-${exp.role}`}
-              className="rounded-lg bg-zinc-100 p-6"
-            >
-              <div className="flex flex-col gap-1">
-                <p className="text-base font-semibold text-zinc-800">{exp.org}</p>
-                <p className="text-base font-normal text-zinc-700">{exp.role}</p>
-                <p className="text-sm font-normal text-zinc-600">
-                  {exp.location} | {exp.dates}
-                </p>
+        <div className="py-14">
+          <h1 className="text-4xl font-bold text-zinc-900">Experience</h1>
+          <div className="mt-10">
+            {experience.map((exp) => (
+              <div key={exp.slug} id={exp.slug} className="scroll-mt-24">
+                <ExperienceCard exp={exp} />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </Container>
-    </main>
+    </PageShell>
   );
 }
-
